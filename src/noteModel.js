@@ -1,4 +1,4 @@
-// a function for creating and returning notes 
+// a function for creating and returning notes
 
 (function(exports) {
   function Note(text) {
