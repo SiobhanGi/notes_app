@@ -7,7 +7,7 @@
     this.notes.push(new Note(text).text);
   };
 
-  NoteList.prototype.all = function() {
+  NoteList.prototype.printAll = function() {
     return this.notes
   };
 

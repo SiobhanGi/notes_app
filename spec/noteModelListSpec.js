@@ -11,13 +11,13 @@
 
   createNote();
 
-  // function all() {
-  //   var noteList = new NoteList();
-  //   noteList.createNote("Note1");
-  //   noteList.createNote("Note2");
-  //   assert.isEqual(noteList.all(), ["Note1", "Note2"], "returns correct text"); DOESNT WORK??!!
-  // }
-  //
-  // all();
+  function printAll() {
+    var noteList = new NoteList();
+    noteList.createNote("Note1");
+    noteList.createNote("Note2");
+    assert.isEqualToArray(noteList.printAll(), ["Note1", "Note2"], "returns correct text");
+  }
+
+  printAll();
 
 })(this);
