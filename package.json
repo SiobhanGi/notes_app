@@ -4,6 +4,7 @@
   "description": "An app for creating and printing notes.",
   "main": "index.js",
   "scripts": {
+    "http-server": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/SiobhanGi/notes_app/issues"
   },
-  "homepage": "https://github.com/SiobhanGi/notes_app#readme"
+  "homepage": "https://github.com/SiobhanGi/notes_app#readme",
+  "dependencies": {
+    "node": "^10.2.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
