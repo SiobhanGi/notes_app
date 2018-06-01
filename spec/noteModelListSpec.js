@@ -1,23 +1,20 @@
-
-// tests if #createNote function saves new note object to array
-
 (function(exports) {
-  function createNote() {
-    var note = "New List";
+
+  console.log(`%cNoteModelList`, `color: GoldenRod`)
+
+  describe("#createNote")
+  it("turns passed text into a note")
+    var note = "New note";
     var noteList = new NoteList();
     noteList.createNote(note);
-    assert.isEqual(note, noteList.notes[0], "returns correct text");
-  };
+    assert.isEqual(note, noteList.notes[0]);
 
-  createNote();
-
-  function printAll() {
+  describe("#printAll")
+  it("it prints out all the notes in notes array")
     var noteList = new NoteList();
     noteList.createNote("Note1");
     noteList.createNote("Note2");
-    assert.isEqualToArray(noteList.printAll(), ["Note1", "Note2"], "returns correct text");
-  }
+    assert.isEqualToArray(noteList.printAll(), ["Note1", "Note2"]);
 
-  printAll();
 
 })(this);
