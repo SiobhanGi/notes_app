@@ -10,7 +10,6 @@
     assert.isEqual(List.htmlString(), "<ul><li>Note 1: Hi</li></ul>", "returns text");
     assert.isEqual(List_empty.htmlString(), "<ul></ul>", "returns text");
   }
-
   htmlString();
 
 })(this);

@@ -15,11 +15,11 @@ var assert = {
     }
   },
 
-  isEqual: function(arg1, arg2, testDescription) {
+  isEqual: function(arg1, arg2) {
     if( arg1 !== arg2 ) {
       throw new Error(`Test failed: ${arg1}: does not equal ${arg2}`);
     } else {
-      console.log(`%cTest passed: ${testDescription}: ${arg1} is equal to ${arg2}`, `color:green`);
+      console.log(`%cTest passed: ${arg1} is equal to ${arg2}`, `color:green`);
     }
   },
 
