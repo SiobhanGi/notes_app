@@ -2,12 +2,13 @@
 
 An app for creating and printing notes.
 
-To run:
-`npm init`
+To install open console and type:
+```npm install```
 
-Initialise web server type into terminal:
-`npm run http-server`
+To start webserver type:
+```npm run http-server```
 
-You can now visit webpage at `localhost:8000`
+You can now use the app by visiting below in your browser.
+```localhost:8000```
 
 Enjoy!
